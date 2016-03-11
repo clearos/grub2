@@ -33,8 +33,8 @@
 %if 0%{?fedora}
 %global efidir fedora
 %endif
-%if 0%{?centos}
-%global efidir centos
+%if 0%{?clearos}
+%global efidir clearos
 %endif
 
 %endif
@@ -249,7 +249,7 @@ Patch0185: 0185-efinet-add-filter-for-the-first-exclusive-reopen-of-.patch
 Patch0186: 0186-Fix-security-issue-when-reading-username-and-passwor.patch
 Patch0187: 0187-01_users-Handle-GRUB_PASSWORD-better.patch
 
-Patch9999: 0001-centos-grub2-password-fix.patch
+Patch9999: 0001-clearos-grub2-password-fix.patch
 
 BuildRequires:  flex bison binutils python
 BuildRequires:  ncurses-devel xz-devel bzip2-devel
@@ -704,6 +704,9 @@ fi
 %exclude %{_datarootdir}/grub/themes/starfield
 
 %changelog
+* Fri Mar 11 2016 Shad L. Lords <slords@clearcenter.com> - 2.02-0.34.v7
+- Move efidir to be clearos
+
 * Tue Jan 05 2016 CentOS Sources <bugs@centos.org> - 2.02-0.34.el7.centos
 - Roll in CentOS Secureboot keys
 - Move the edidir to be CentOS, so people can co-install fedora, rhel and centos
