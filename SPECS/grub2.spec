@@ -19,12 +19,13 @@ Source3:	securebootca.cer
 Source4:	secureboot.cer
 Source5:	http://unifoundry.com/unifont-5.1.20080820.pcf.gz
 Source6:	gitignore
-Patch9999: 0001-clearos-grub2-password-fix.patch
 
 %include %{SOURCE1}
 
 # generate with do-rebase
 %include %{SOURCE2}
+
+Patch9999:  0001-clearos-grub2-password-fix.patch
 
 BuildRequires:  flex bison binutils python
 BuildRequires:  ncurses-devel xz-devel bzip2-devel
