@@ -1,6 +1,8 @@
 SOURCES/grub-2.02~beta2.tar.xz
-SOURCES/theme.tar.bz2
 SOURCES/unifont-5.1.20080820.pcf.gz
+<<<<<<< HEAD
 SOURCES/centos.cer
 /Makefile
 *.src.rpm
+=======
+>>>>>>> c7
